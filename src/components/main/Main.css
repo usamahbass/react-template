@@ -1,0 +1,246 @@
+.main {
+    grid-area: main;
+}
+
+/* main Header */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 92px;
+}
+
+.main-page-title {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5em;
+}
+
+.image-items {
+    width: 350px;
+}
+/* main Content */
+
+.main-content-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 100px auto;
+}
+
+.main-content-title span {
+    border-bottom: 2px solid black; 
+}
+
+.main-content-about-page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main-content-about-page .about-content {
+    border: 1px solid #4e73df;
+    color: #fff;
+    margin: 20px;
+    background: #4e73df;
+    border-radius: 10px;
+}
+
+.main-content-about-page .about-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about-content-self {
+    font-size: 1.2em;
+    margin: 50px;
+}
+
+.about-content-self b {
+   padding: 20px;
+}
+
+/* skill */
+
+.main-content-skill {
+    position: relative;
+    top: 100px;
+    margin: 50px;  
+}
+
+.scroll {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1000px;
+}
+
+.scroll .card {
+    position: relative;
+    width: 300px;
+    background: #4e73df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 0 20px 50px #777;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.scroll .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px transparent;
+    background: transparent;
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent .number h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+
+.percent .number h2 span {
+    font-size: 24px;
+    color: #fff;
+}
+
+.card .box {
+    display: flex;
+}
+.card .box .code {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    fill: none;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    stroke: #fff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke: #4e73df;
+    stroke-dashoffset: calc(440 + (440 * 45) / 100);
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+    stroke: #4e73df;
+    stroke-dashoffset: calc(440 + (440 * 35) / 100);
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+    stroke: #4e73df;
+    stroke-dashoffset: calc(440 + (440 * 25) / 100);
+}
+
+/* contact */
+
+.main-content-contact {
+   position: relative;
+   top: 100px;
+   padding: 150px;
+}
+
+.main-content-contact form {
+    display: grid;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-contact label {
+    font-size: 20px;
+}
+
+.main-content-contact input, textarea {
+    margin: 20px;
+    width: 500px;
+    height: 25px;
+    border: none;
+}
+
+.main-content-contact textarea {
+    height: 250px;
+}
+
+.main-content-contact input:focus, textarea:focus {
+    outline: none;
+    font-style: normal;
+}
+
+.main-content-contact input, textarea::placeholder {
+    font-style: italic;
+}
+
+.main-content-contact .btn {
+    position: relative;
+    bottom: 100px;
+    left: 50%;
+    padding: 7px 14px;
+    border-radius: 10px;
+}
+
+.main-content-contact .send {
+    background: #fff;
+    border: 1px solid #151719;
+}
+
+.main-content-contact .send:hover {
+    border: 1px solid #4e73df;
+    background: #4e73df;
+    color: #fff;
+    cursor: pointer;
+}
+

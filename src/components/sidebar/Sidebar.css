@@ -1,0 +1,43 @@
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background: #4e73df;
+}
+
+.sidebar i {
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.sidebar-nav {
+    position: fixed;
+    padding: 0;
+    list-style: none;
+    margin-top: 150px;
+}
+
+.sidebar-nav-item  {
+    padding: 20px 20px 20px 40px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.sidebar-nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav-item a:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+@media only screen and (max-width : 1080px) {
+    .sidebar {
+        display: none;
+    }
+}

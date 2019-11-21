@@ -1,0 +1,47 @@
+.header {
+    grid-area: header;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.header-content .input-type {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.header-content .input-type:focus {
+    outline: none;
+}
+
+.header-content .input-type::placeholder {
+    position: relative;
+    left: 5px;
+    color: #777;
+}
+
+.header-content .input-btn {
+    color: #fff;
+    background: #4e73df;
+    width: 40px;
+    height: 40px;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header-content .input-btn:focus {
+    outline: none;
+}
+
+.header-content .title-name {
+    color: #4e73df;
+    cursor: pointer;
+    font-size: 2em; 
+    margin: 5px;
+}

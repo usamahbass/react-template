@@ -1,0 +1,31 @@
+.footer {
+    grid-area: footer;
+    background: #4e73df;
+}
+
+.footer-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+.footer-icon {
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
+
+.footer-icon a {
+    cursor: pointer;
+    margin: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    color: #fff;
+    text-align: center;
+}
