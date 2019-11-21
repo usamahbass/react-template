@@ -75,7 +75,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 1000px;
 }
 
 .scroll .card {
@@ -242,5 +241,11 @@ svg circle:nth-child(2) {
     background: #4e73df;
     color: #fff;
     cursor: pointer;
+}
+
+@media only and screen (max-width: 1080px) {
+    .scroll {
+        width: 1000px;
+    }
 }
 
